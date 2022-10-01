@@ -1,0 +1,50 @@
+
+let tasksToDo = `[
+    {
+        "taskName": "Shopping", 
+        "image": "shopping.webp", 
+        "description": "Shop for weekly groceries at Billa and Hofer.", 
+        "priority": 0    
+    },{
+        "taskName": "Pre-work Javascript", 
+        "image": "study.jpg", 
+        "description": "Do the pre-work und study Javascript with practical exercises.", 
+        "priority": 0    
+    },{
+        "taskName": "Cleaning the house", 
+        "image": "clean.jpg", 
+        "description": "Clean bathroom, kitchen and living rooms.", 
+        "priority": 0    
+    },{
+        "taskName": "Meet friends", 
+        "image": "friends.jpg", 
+        "description": "Meet Merlin and Gaius on Saturday afternoon.", 
+        "priority": 0    
+    },{
+        "taskName": "Birthday party", 
+        "image": "birthday.jpg", 
+        "description": "Buy an amazing gift.", 
+        "priority": 0    
+    },{
+        "taskName": "Time to bake", 
+        "image": "bake.webp", 
+        "description": "Bake cinnamon rolls.", 
+        "priority": 0    
+    },{
+        "taskName": "Workout", 
+        "image": "workout.jpg", 
+        "description": "First Jogging, than training: Leg-day.", 
+        "priority": 0    
+    },{
+        "taskName": "Gaming", 
+        "image": "gaming.webp", 
+        "description": "Apex, Valorant, GTA ", 
+        "priority": 0    
+    },{
+        "taskName": "Recharge battery", 
+        "image": "recharge.webp", 
+        "description": "Go for a fresh morning walk, meditate, continue reading thriller and prepare for work.", 
+        "priority": 0    
+    }
+    
+]`;

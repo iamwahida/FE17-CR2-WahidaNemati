@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planner</title>
+    <link rel="stylesheet" href="styling/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!--icons from fontawesome -->
+    <script src="https://kit.fontawesome.com/eadd8b6aae.js" crossorigin="anonymous"></script>  
+  </head> 
+<body>
+    <!--navbar from bootstrap-->
+    <nav class="navbar navbar-expand-lg bg-dark" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-list-check" style="padding-right: 15px;"></i>My Planner</a>
+          <button class="navbar-toggler  text-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon  text-bg-light"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-light" style="--bs-text-opacity: .8;" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="--bs-text-opacity: .8;" href="#">Tasks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" style="--bs-text-opacity: .8;" href="#">Settings</a>
+              </li>
+            </ul>
+            <span class="navbar-text text-light" id="glocke">
+              <i class="fa-regular fa-bell"></i>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- first background img with the heading "weekly planner" -->
+      <div id="firstimg">
+        <p>Weekly planner</p>
+      </div>
+      <!--card with the tasks => javascript -->
+      <div class="container">
+      <h5 class="weeklytasks">Weekly Tasks <input style= " padding: 10px; margin-left: 90%; font-size: 20px;" id ="click" type="button" value="Sort by priority"> </h5>
+        <div class = "row row-cols-lg-3 row-cols-md-2 row-cols-sm-1 row-cols-xs-1" id="merlin">
+        </div>
+      </div>
+      
+      
+    <!-- Foooter -->
+    <footer>
+      <div class="last">
+        <a href="#" class="fa fa-facebook"></a>
+          <a href="#" class="fa fa-twitter"></a>  
+          <a href="#" class="fa fa-instagram"></a>  
+        </div>
+          <div class="last">
+          <nav class="navbar">
+            <div class="container-fluid text-light">Sign up for our newsletter: 
+              <form class="d-flex ps-4 w-80" role="search">
+                <input class="form-control me-2" type="search" aria-label="Search">
+                <button class="btn btn-outline-success text-light" type="submit">Subscribe</button>
+              </form>
+            </div>
+          </nav> 
+      </div>
+      <div class="last">
+          <p>Copyright &copy 2022 Wahida</p>
+      </div>
+</footer>
+    
+
+    
+    <script src="/script/data.json"></script>
+    <script src="/script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
