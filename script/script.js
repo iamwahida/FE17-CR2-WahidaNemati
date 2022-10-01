@@ -1,14 +1,14 @@
 //Test if it's connected
 // let test = "wahida is cool";
 // console.log(test);
-
+ 
 let tasks = JSON.parse(tasksToDo);
 console.table(tasks);
 
 //print every toDo task
 for (let toDo of tasks) {
     document.getElementById("merlin").innerHTML +=  
-        `<div class = "card border border-dark pb-3">
+        `<div class = "card border border-dark shadow-lg p-3 mb-5 bg-body rounded pb-3">
         <i class="fa fa-bookmark" id ="mark"></i>
         <p id ="blueTaskbutton">Task</p>
         <img src="images/${toDo.image}" width="100%" height = "50%">
@@ -18,10 +18,14 @@ for (let toDo of tasks) {
                 <p>${toDo.description}</p>
             </div>
             <hr class = "text-dark">
-            <input class="amount" id = "prio2" type="submit" value="Priority Level:"> 
+            <input class="amount" id = "prio2" type="submit" value = "&#9888 Priority Level: "> 
             <br>
                 <p class="importance" id ="prio">${toDo.priority}</p>
             <hr>
+            <div class="d-flex justify-content-end gap-3"> 
+            <input class = "bg-danger text-light p-1 border border-danger rounded-3" type="button" value="&#9940 Delete">
+            <input class= "bg-success text-light p-1 border border-success rounded-3" type="button" value="&#9989 Done">
+            </div>
         </div>
         `
     };
@@ -91,10 +95,11 @@ console.log(increase_amount.length);
                     <br>
                         <p class="importance" id ="prio">${toDo.priority}</p>
                     <hr>
+                    <div><input id ="delete" type="button" value="Delete"> <input id ="done" type="button" value="Done"></div>
                 </div>
                 `
             };
-            
+
             let newamount = document.getElementsByClassName("amount");
             for (let i = 0; i < newamount.length; i++) {
                 newamount[i].addEventListener("click", function(){

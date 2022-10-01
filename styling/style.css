@@ -67,6 +67,26 @@
 
 #prio2 {
   margin-right: 70%;
+  padding-right: 10%;
+  text-decoration: none;
+  background-color: white;
+}
+#prio2:hover {
+  transform: scale(1.2);
+}
+
+.sort {
+  display: flex;
+  margin-left: 90%;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: white;
+  border-radius: 20px;
+}
+.sort:hover {
+  transform: scale(1.1);
+  background-color: rgb(99, 187, 221);
+  color: white;
 }
 
 footer {
